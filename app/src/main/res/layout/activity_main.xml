@@ -10,8 +10,8 @@
         android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/screenshot_1"
         android:contentDescription="qweqq3q5j67j5678j7568jk"
+        android:src="@drawable/screenshot_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,11 +22,11 @@
         android:id="@+id/previous"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="@dimen/default_margin"
         android:src="@drawable/skip_previous_24px"
-        app:layout_constraintEnd_toStartOf="@id/play"
         app:layout_constraintBottom_toBottomOf="@id/play"
-        app:layout_constraintTop_toTopOf="@id/play"
-        android:layout_marginEnd="@dimen/default_margin"/>
+        app:layout_constraintEnd_toStartOf="@id/play"
+        app:layout_constraintTop_toTopOf="@id/play" />
 
     <ImageView
         android:id="@+id/play"
@@ -41,18 +41,18 @@
         android:id="@+id/next"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginStart="@dimen/default_margin"
         android:src="@drawable/skip_next_24px"
         app:layout_constraintBottom_toBottomOf="@id/play"
         app:layout_constraintStart_toEndOf="@id/play"
-        app:layout_constraintTop_toTopOf="@id/play"
-        android:layout_marginStart="@dimen/default_margin"/>
+        app:layout_constraintTop_toTopOf="@id/play" />
 
     <TextView
         android:id="@+id/executor"
+        style="@style/TextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/executor"
-        style="@style/TextStyle"
         app:layout_constraintBottom_toTopOf="@id/composition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,10 +60,10 @@
 
     <TextView
         android:id="@+id/composition"
+        style="@style/TextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/composition"
-        style="@style/TextStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
